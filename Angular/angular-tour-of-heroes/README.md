@@ -20,7 +20,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to executek the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
@@ -52,10 +52,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     `.. ],`
  - learned that cli imported generated Component
 
- ## 2. [Diplaying lists](https://angular.io/tutorial/toh-pt2)
+ ## 2. [Displaying lists](https://angular.io/tutorial/toh-pt2)
   - created mock list of heros app/mock-heroes.ts
   - imported it to the component
   - initalized the list in the component
   - displayed a list using *ngFor to generate `<li>`'s
-    - `<li *ngFor="let hero of heroes">`
+    - `*ngFor="let i of Is"`
  - added predefined styles
+ - added click binding to markup
+   - `(click)="onSelect(hero)"`
+ - defined click handler in component.ts
+  - ` onSelect(){...}`
+- added div to include hero details/rendered them
+- learned `*ngIf="..."` command, used to not render div on condition
