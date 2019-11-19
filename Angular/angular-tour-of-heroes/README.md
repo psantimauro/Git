@@ -60,8 +60,21 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     - `*ngFor="let i of Is"`
  - added predefined styles
  - added click binding to markup
-   - `(click)="onSelect(hero)"`
+   - `(click)="onSelect()"`
  - defined click handler in component.ts
   - ` onSelect(){...}`
 - added div to include hero details/rendered them
 - learned `*ngIf="..."` command, used to not render div on condition
+- added [class binding](https://angular.io/guide/template-syntax#class-binding) to conditionally style the selected `<li>`
+  - `[class.selected]="some condition"`
+
+## 3. [Master/Detail Components](https://angular.io/tutorial/toh-pt3)
+- generated new heroDetail component
+- rendered hero details
+- imported the hero to the component
+- updated the angular cli import to include `Input`
+- learned a bit about [Input Properties](https://angular.io/guide/template-syntax#inputs-outputs)
+- added hero property to HeroComponent 
+  - `@Input() property: Class`
+- added the heroDetail component to the hero component
+  - `<componentName [property]="value"> </componentName>`
