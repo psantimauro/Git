@@ -100,5 +100,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  - injected messages service to hero service
  - updated getHeroes (on hero service) to send the message service a message when getheros is called
  - updated the messages componet to inject the message service, as a `public` property so it can be bound to the template
- - updated message component to display messages and clear them
- - Bonus: updated heroes component to include message service and add message when new hero is added
+- updated message component to display messages and clear them
+- Bonus: updated heroes component to include message service and add message when new hero is added
+
+ ## 5. [Routing](https://angular.io/guide/router)
+  - added routing module via `ng generate module app-routing --flat --module=app`
+   - `--flat puts the file in src/app instead of its own folder.`
+   - `--module=app tells the CLI to register it in the imports array of the AppModule.`
+
+ - updated the app-routing module to have the path `"heroes"` route to the HeroComponent
+  - declared `Routes` array with a Route=`{ path: '{url}', component: {component} }`
+  - added `RouterModule.forRoot(<arrayOfRoutes>)` to import array. [forRoute Docs](https://angular.io/api/router/RouterModule#forRoot). 
+   - attaches the route at the app root level
+  - added `RouterModule` to exports array
+ - updated app component to use `<router-outlet>` from heros component
+  - outlet tells the broswer where to render routed views
+- updaed app component to render a nav bar with link to heros page
