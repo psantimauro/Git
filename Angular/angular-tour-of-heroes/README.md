@@ -116,3 +116,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  - updated app component to use `<router-outlet>` from heros component
   - outlet tells the broswer where to render routed views
 - updaed app component to render a nav bar with link to heros page
+- created dashboard component
+ - renders heroes links 
+- added dashboard to app component
+- removed hero-details from hero component
+- updating routing to support hero details, passing in an `:id` via the path (`path: {name}/:{id}`) oun the route
+- updated dashboard to route to details
+- updated hero to route to details
+- removed `onSelect` from hero 
+- added the following angular components
+ - [`ActivatedRoute`](https://angular.io/api/router/ActivatedRoute) : provides route info to the component instance
+ - [`Location`](https://angular.io/api/common/Location) : provides browser interation
+- added `getHero` method to hero detail
+ - gets `id` from the `route.snapshot.paramMap.get('{paramName}')`
+ - uses `id` to get that specific id from the hero service
+- added missing async `getId` method to the hero service
+- added back button on hero component
