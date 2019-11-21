@@ -78,3 +78,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   - `@Input() property: Class`
 - added the heroDetail component to the hero component
   - `<componentName [property]="value"> </componentName>`
+
+  ## 4. [Services](https://angular.io/tutorial/toh-pt4)
+  - generated hero service `ng generate service <name>` or `ng g s <name>`
+  - @`Injectable()` imported automatically
+    - decorator used for DI 
