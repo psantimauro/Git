@@ -81,5 +81,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
   ## 4. [Services](https://angular.io/tutorial/toh-pt4)
   - generated hero service `ng generate service <name>` or `ng g s <name>`
-  - @`Injectable()` imported automatically
+  - `@Injectable()` imported automatically
     - decorator used for DI 
+  - added hero service to include a getHeroes method to return the mocked heros
+  - learned about CLI injecting `providedIn: 'root'` on the service.  
+   - `@Injectable` also is used to optimize the app by removing service if its not required
+ 
