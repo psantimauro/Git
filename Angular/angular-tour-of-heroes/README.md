@@ -86,4 +86,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   - added hero service to include a getHeroes method to return the mocked heros
   - learned about CLI injecting `providedIn: 'root'` on the service.  
    - `@Injectable` also is used to optimize the app by removing service if its not required
- 
+  - updated heroes component to leverage new service
+  - getHeroes method on servie is currently syncronous.  we will leverage `RxJS` to make it async. 
+   - added `Observable, of` to heroes service
+   - updated `getHeroes` to return `Observable<T>` instead of `T`
+   - updated `getHeroes` the return to `of(object)` vs `object`
+  - updated heros component to call `service.method().subscribe( <function>)` so it could leverage the observable see [subscription in RxJS](https://rxjs-dev.firebaseapp.com/guide/subscription)
+   - `subscribe()` passes emited array to calll
