@@ -12,3 +12,4 @@ intro angular.io tutorial demo that demos the following:
 - master detail components
 - simple styling
 - angular asyn services
+- angular routing, location, and browser parameters
