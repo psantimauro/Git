@@ -92,4 +92,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    - updated `getHeroes` to return `Observable<T>` instead of `T`
    - updated `getHeroes` the return to `of(object)` vs `object`
   - updated heros component to call `service.method().subscribe( <function>)` so it could leverage the observable see [subscription in RxJS](https://rxjs-dev.firebaseapp.com/guide/subscription)
-   - `subscribe()` passes emited array to calll
+   - `subscribe()` passes emited array to called function
+  - generated Message component
+  - added message to app component
+  - generated message service
+   - updated service to include a Messages array and added `add` and `clear` methods
+ - injected messages service to hero service
+ - updated getHeroes (on hero service) to send the message service a message when getheros is called
+ - updated the messages componet to inject the message service, as a `public` property so it can be bound to the template
+ - updated message component to display messages and clear them
+ - Bonus: updated heroes component to include message service and add message when new hero is added
