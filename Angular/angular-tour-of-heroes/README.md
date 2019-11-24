@@ -132,3 +132,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  - uses `id` to get that specific id from the hero service
 - added missing async `getId` method to the hero service
 - added back button on hero component
+
+## 6. [HTTP](https://angular.io/tutorial/toh-pt6)
+ - imported HttpClient module from `@angular/common/http` and imported it to the app module
+ - installed `angular-in-memory-web-api` to simulate RESTFul service
+ - generate InMemoryData service
+  - replaces mock heroes class (deleted)
+ - imported HttpClientInMemoryWebApiModule, and passed it an InMemoryDataService in the app module
