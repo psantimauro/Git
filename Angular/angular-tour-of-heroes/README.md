@@ -138,4 +138,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  - installed `angular-in-memory-web-api` to simulate RESTFul service
  - generate InMemoryData service
   - replaces mock heroes class (deleted)
- - imported HttpClientInMemoryWebApiModule, and passed it an InMemoryDataService in the app module
+ - imported HttpClient and HttpHeader into hero service
+  - passed the HttpClient into the constructor
+  - created a logging method
+  - updated getHeroes to get via HttpClient
